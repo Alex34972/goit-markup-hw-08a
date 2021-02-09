@@ -1,0 +1,50 @@
+
+.studio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  &--hidden{
+      @extend %is-hidden;}
+  &__list {
+    display: flex;
+    padding: 0px;
+    margin-top: 0;
+  }
+  &__text:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__text::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:$secondary-beckground-color;
+    border-radius: 4px;
+  }
+  &__ikon-group::before {
+    background-image: url(../Images/Group.svg);
+  }
+  &__ikon-clock::before {
+    background-image: url(../Images/clock.svg);
+  }
+  &__ikon-diagram::before {
+    background-image: url(../Images/diagram.svg);
+  }
+ &__ikon-astro::before {
+    background-image: url(../Images/astronaut.svg);
+  }
+  &__caption {
+    margin: 0;
+    margin-bottom: 10px;
+  
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $dark-main-color;
+  }
+  &__content {
+    width: 270px;
+    margin: 0;
+  }}

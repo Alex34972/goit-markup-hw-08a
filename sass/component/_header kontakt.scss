@@ -1,0 +1,77 @@
+.header-kontakt {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0;
+
+  @media (max-width: $tablet) {
+    margin: 302px auto 64px 40px;
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    margin-left: auto;
+    padding: 21px 0;
+  }
+  @media (min-width: $decktop) {
+    flex-direction: row;
+  }
+  &__subject {
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    @media (min-width: $tablet) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+    @media (min-width: $decktop) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
+    align-items: center;
+    text-align: center;
+    transition: color $basik-transition;
+  }
+  &__subject:not(:last-child) {
+    @media (min-width: $tablet) {
+      margin-bottom: 10px;
+    }
+    @media (min-width: $decktop) {
+      margin: 0;
+      margin-right: 30px;
+      padding: 0;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+
+    color: $dark-secondari-color;
+    fill: $dark-secondari-color;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+  &__icon {
+    @media (max-width: $tablet){
+      display: none;
+    }
+    margin-right: 10px;
+  }
+}
+.tel{
+  @media (max-width: $tablet){
+    margin-bottom: 32px;
+   color: #2196F3;
+  }
+}
+.mail{
+  @media (max-width: $tablet){
+    margin-bottom: 64px;
+    font-size: 24px;
+  }
+}

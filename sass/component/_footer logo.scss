@@ -1,0 +1,19 @@
+.footer__logo {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px; 
+  padding: 0;
+  
+  text-align: center;
+  font-style: normal;
+  color: #ffffff;
+
+  @media screen and (min-width:$tablet) {
+    margin-left: 76px;
+    }
+  @media screen and (min-width:$decktop){
+    display: flex;
+    margin-left: 0;
+    }
+
+}

@@ -1,0 +1,31 @@
+.social-net {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    justify-content: center;
+  
+  &__list:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__link {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+    transition: background-color $basik-transition,
+      fill $basik-transition;}
+  
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-color;
+    fill: $white-main-color;
+  }
+  &__ikon {
+    display: flex;
+    height: 20px;
+    width: 20px;
+  }}

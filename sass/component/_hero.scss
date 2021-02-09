@@ -1,0 +1,80 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background: no-repeat;
+  width: 100%;
+  height: 400px;
+  background-color: #c4c4c4;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @media screen and(max-width:$tablet) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../Images/hero img/Header mobil img.jpg");
+    @media screen and(min-device-pixel-ratio: 2) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../Images/hero img/Header mobil img@2x.jpg");
+    }
+  }
+
+  @media screen and(min-width:$tablet) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../Images/hero img/Header tablet img.jpg");
+    @media screen and(min-device-pixel-ratio: 2) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../Images/hero img/Header tablet img@2x.jpg");
+    }
+  }
+  @media screen and(min-width:$decktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../Images/hero img/hero decktop img.jpg");
+    @media screen and(min-device-pixel-ratio: 2) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../Images/hero img/hero decktop img@2x.jpg");
+    }
+  }
+  &__title {
+    margin: 0 0 30px;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $white-main-color;
+    text-transform: uppercase;
+
+    @media (min-width: $decktop) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+  &__button {
+    @extend %button;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+  }
+}

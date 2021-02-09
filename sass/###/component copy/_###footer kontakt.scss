@@ -1,0 +1,17 @@
+.footer-kontakt {
+  
+  padding: 0;
+  margin: 0px;
+  align-items: center;
+
+&__list:not(:last-child) {
+  margin-bottom: 9px;
+}
+&__link--other {
+  font-style: normal;
+  color: $white-main-color;
+}
+&__link {
+  font-style: normal;
+  color:$footer-font-color;
+}}

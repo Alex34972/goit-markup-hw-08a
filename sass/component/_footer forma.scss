@@ -1,0 +1,60 @@
+.footer-forma {
+  text-align: center;
+  @media screen and (min-width: $decktop) {
+    display: block;
+    margin-left: auto;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    @media screen and (min-width: $decktop) {
+      display: flex;
+    }
+  }
+  &__text {
+    @extend %footer-captions;
+  }
+  &__label {
+    width: 100%;
+    height: 50px;
+    @media screen and (min-width: $tablet) {
+      width: 450px;
+      @media screen and (min-width: $decktop) {
+        width: 358px;
+        margin-bottom: 0;
+      }
+    }
+
+    padding-left: 16px;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: $footer-font-color;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: $sub-beckground-color;
+  }
+  &__label::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: $footer-font-color;
+  }
+  &__button {
+    @extend %button;
+    height: 50px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: $decktop) {
+      margin-left: 12px;
+    }
+    padding: 10px 10px 10px 29px;
+  }
+  &__button-ikon {
+    margin-left: 10px;
+  }
+}

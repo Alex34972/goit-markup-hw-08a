@@ -1,0 +1,20 @@
+.footer {
+  
+  background-color: $sub-beckground-color;
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: $decktop) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}
+.page-kontakt {
+  margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
+ 
+}

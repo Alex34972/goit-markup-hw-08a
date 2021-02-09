@@ -1,0 +1,35 @@
+.header-kontakt {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+  
+  &__subject:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__subject {
+    
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-align: center;
+    transition: color $basik-transition;
+  }
+  &__link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    color: $dark-secondari-color;
+    fill: $dark-secondari-color;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+  &__icon {
+    margin-right: 10px;
+  }}
